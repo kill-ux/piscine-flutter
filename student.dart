@@ -3,7 +3,7 @@ import 'person.dart';
 class Student extends Person {
   int batch;
   int level;
-  String _secretKey = "01";
+  String _secretKey;
 
   Student(
     String name,
@@ -13,5 +13,5 @@ class Student extends Person {
     this.batch,
     this.level, [
     String? surname,
-  ]) : super(name, cityOfOrigin, age, height, surname);
+  ]) :  _secretKey = "01", super(name, cityOfOrigin, age, height, surname);
 }
