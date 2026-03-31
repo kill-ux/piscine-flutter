@@ -21,11 +21,3 @@ class Circle {
   double get y => _y;
   double get radius => _radius;
 }
-
-
-void main() {
-  final c = Circle(2, 3, 4);
-  print(c.area);                // 3.14 * 16
-  print(c.rightMostCoordinate); // 6
-}
-
